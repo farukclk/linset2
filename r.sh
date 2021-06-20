@@ -43,7 +43,7 @@ done
 else
 
 
-#wifite --skip-crack --no-pmkid -i mon0
+wifite --skip-crack --no-pmkid -i mon0
 airmon-ng start wlan1
 airodump_ng wlan1mon
 echo ""
