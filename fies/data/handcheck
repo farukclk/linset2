@@ -1,0 +1,18 @@
+
+#!/bin/bash
+bssid=46:AF:28:74:0D:D3
+essid=asdd
+if  aircrack-ng -a 2 -b $bssid -0 -s handshake.cap -w data.txt  | grep "KEY NOT FOUND"; then
+echo 2 > status.txt
+echo "2
+" > intento
+else
+echo "1
+" > intento
+cp data.txt  ../../$essid-$bssid-pass.txt
+echo 1 > status.txt
+fi
+
+echo " " > data.txt
+
+	
