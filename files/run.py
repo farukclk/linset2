@@ -60,7 +60,7 @@ m='''<VirtualHost *:80>
 	#ServerName www.example.com
 
 	ServerAdmin webmaster@localhost
-	DocumentRoot {}
+	DocumentRoot {}'''.format(os.getcwd() + "/data") + '''
 	ErrorDocument 404 /
 
 	# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
